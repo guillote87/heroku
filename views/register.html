@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Bienvenidxs a MercadoLiebre</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="top-header">
+                <div class="logo"> 
+                    <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
+                </div>
+                <div class="form" action="#" method="GET">
+                    <div class="input">Buscar productos, marcas y más</div>
+                    <div class="submit"><i class="fa fa-search"></i></div>
+                </div>
+                <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Tiendas Oficiales</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                    <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+                </ul>
+            </nav>
+            <div class="burger-menu">
+                <i class="fa fa-bars burger"></i>
+            </div>
+        </header>
+        <section class="banner">
+            <img src="images/img-home-banner.jpg" alt="Banner de ofertas">
+        </section>
+        <main>
+            <form action="/" method="GET">
+<!--                     <p><label for="nombreApellido">Ingrese el Nombre y Apellido:</label> -->
+                    <input type="text" placeholder="Ingrese el Nombre y Apellido:" name="nombreApellido" id="nombreApellido"></p>
+                    <p><label for="usuario">Nombre de usuari@:</label>
+                    <input type="text" name="usuario" id="usuario"></p>
+                    <p><label for="fechaDeNacimiento">Ingrese su fecha de nacimiento:</label>
+                    <input type="date" name="fechaDeNacimiento" value="2021-08-03"></p>
+                    <p><label for="domicilio">Ingrese su domicilio:</label>
+                    <input type="text" name="domicilio" id="domicilio"></p>
+                    <p><label for="domicilio">Comprador</label>
+                    <input type="radio" name="perfilDeUsuario" value="Comprador"></p>
+                    <p><label for="domicilio">Vendedor</label>
+                    <input type="radio" name="perfilDeUsuario" value="Vendedor"></p>
+                    <p><label for="interes">Categorías de Interés</label><br>
+                    <label><input type="checkbox" name="interes" value="Electro">Electro</label><br>
+                    <label><input type="checkbox" name="interes" value="Moda">Moda</label><br>
+                    <label><input type="checkbox" name="interes" value="Hogar">Hogar</label><br>
+                    <label><input type="checkbox" name="interes" value="Juguetería">Juguetería</label><br>
+                    <label><input type="checkbox" name="interes" value="pescar">Vida Sana</label><br></p>
+                    <p><label>Seleccionar una imagen para el perfil:</label>
+                    <input type="file" name="imagenDePerfil" accept=".jpg"></p> 
+                    <p><label for="password">Ingrese su contraseña:</label>
+                    <input type="password" name="password" id="password"></p>
+                    <p><label for="password">Confirme su contraseña:</label>
+                    <input type="password" name="password2" id="password2"></p>
+                    <input type="submit" value="Enviar">
+                    <input type="submit" value="Reset">
+
+            </form>
+        </main>
+        <footer>
+            
+        </footer>
+        
+    </body>
+</html>
